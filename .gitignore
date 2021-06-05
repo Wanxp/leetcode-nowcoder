@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/nowcoder/build/
+/nowcoder/build/classes/java/main/
