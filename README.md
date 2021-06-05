@@ -1,0 +1,1 @@
+本项目做为leetcode和nowcoder的练手项目、提供算法题的基本题目和java版本的解题方法
