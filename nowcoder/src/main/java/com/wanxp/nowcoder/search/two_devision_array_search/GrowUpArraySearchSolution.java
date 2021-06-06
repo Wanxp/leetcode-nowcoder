@@ -1,5 +1,9 @@
 package com.wanxp.nowcoder.search.two_devision_array_search;
 
+/**
+ * 解法一:左下法
+ * 先判定是否在其内部，
+ */
 public class GrowUpArraySearchSolution {
     public boolean find(int target, int [][] array) {
         if(array.length == 0 ||
