@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class ArrayIniter {
-    private int length;
     
     private int[] arr;
 
@@ -15,13 +14,11 @@ public class ArrayIniter {
 
     public ArrayIniter(int length, Type type, boolean display) {
         if(length > 0) {
-            this.length = length;
             arr = new int[length];
             for(int i = 0;i < length;i++) {
                 arr[i] = type.getVallue(length, i);
             }
         }else{
-            this.length = length;
             arr = new int[0];
         }
         this.display = display;
@@ -29,13 +26,11 @@ public class ArrayIniter {
 
     public ArrayIniter(int length, Type type) {
         if(length > 0) {
-            this.length = length;
             arr = new int[length];
             for(int i = 0;i < length;i++) {
                 arr[i] = type.getVallue(length, i);
             }
         }else{
-            this.length = length;
             arr = new int[0];
         }
     }

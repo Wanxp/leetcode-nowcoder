@@ -1,7 +1,4 @@
 package com.wanxp.basic.sort;
-
-import java.util.Arrays;
-
 public class QuickSort implements Sorter{
     public long sort(int[] arr) {
 	    long start = System.currentTimeMillis();
