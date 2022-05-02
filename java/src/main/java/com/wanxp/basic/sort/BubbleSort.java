@@ -1,5 +1,4 @@
 package com.wanxp.basic.sort;
-import com.wanxp.basic.sort.*;
 public class BubbleSort implements Sorter{
     public long sort(int[] arr) {
         long start = System.currentTimeMillis();
