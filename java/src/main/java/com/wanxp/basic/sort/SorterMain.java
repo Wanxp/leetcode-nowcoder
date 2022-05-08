@@ -4,7 +4,8 @@ import com.wanxp.basic.sort.ArrayIniter.Type;
 
 public class SorterMain {
 
-    static int length = 4;
+    static int length = 10;
+    static int strLength = 5;
     public static void main(String[] args) {
         boolean display = length < 100;
         
@@ -15,6 +16,8 @@ public class SorterMain {
         // new ArrayIniter(length, Type.RANDOM, display).sort(new QuickSort());
         // new ArrayIniter(length, Type.RANDOM, display).sort(new ShellSort());
         // new ArrayIniter(length, Type.RANDOM, display).sort(new MergeSort());
-        new MergeSort().sort(new int[]{0,1,3,1});
+        // new ArrayIniter(length, Type.RANDOM, display).sort(new CountSort());
+        new ArrayStringIniter(length, strLength, display).sort(new RadixSort());
+
     }
 }

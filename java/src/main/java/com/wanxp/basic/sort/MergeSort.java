@@ -8,7 +8,7 @@ public class MergeSort implements Sorter{
     public long sort(int[] arr) {
         long start = System.currentTimeMillis();
         int[] temp = sort(arr, 0, arr.length - 1);
-        Arrays.compareUnsigned(temp, arr);
+        System.arraycopy(temp, 0, arr, 0, temp.length);
         return System.currentTimeMillis() - start;
     }
 
@@ -38,7 +38,7 @@ public class MergeSort implements Sorter{
                right++;
                index++;
                if(right > rightEnd) {
-                   copyToTemp(result, tempLeft, left,  index);
+                   System.arraycopy(tempLeft, left, result, index, tempLeft.length - left);
                    break;
                }
            }else {
@@ -46,7 +46,7 @@ public class MergeSort implements Sorter{
                left++;
                index++;
                if(left > leftEnd) {
-                   copyToTemp(result, tempRight, right, index);
+                System.arraycopy(tempRight, right, result, index, tempRight.length - right);
                    break; 
                }
            }
@@ -54,12 +54,6 @@ public class MergeSort implements Sorter{
        return result;
    }
 
-   public void copyToTemp(int[] result, int[] temp, int start, int index) {
-        int tempIndex = index;
-        for(int i = start;i < temp.length; i++) {
-            result[tempIndex++] = temp[i];
-        }
-   }
 
 
     

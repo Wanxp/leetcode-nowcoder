@@ -10,7 +10,6 @@ public class BinaryTreeSource {
 
     @Getter
     @Setter
-    @AllArgsConstructor
     public static class BinaryTreeNode {
 
 
@@ -28,6 +27,13 @@ public class BinaryTreeSource {
          * 右节点
          */
         private BinaryTreeNode right;
+
+
+        public BinaryTreeNode(int value, BinaryTreeNode left, BinaryTreeNode right) {
+            this.value = value;
+            this.left = left;
+            this.right = right;
+        }
 
     }
 
