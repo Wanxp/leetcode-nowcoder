@@ -3,7 +3,7 @@ package com.wanxp.basic.sort;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * 
+ * 定长字符串排序, 并且使用两个数组进行基数排序
  */
 public class RadixSort2 implements StringSorter{
 

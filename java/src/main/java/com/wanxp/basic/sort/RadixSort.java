@@ -3,7 +3,7 @@ package com.wanxp.basic.sort;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * 
+ * 定长数组排序,使用list做基数排序
  */
 public class RadixSort implements StringSorter{
 
